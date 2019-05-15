@@ -1,0 +1,67 @@
+/* pages/list/list.wxss */
+.listcontainer{
+  width: 100%;
+  height: 100%;
+  margin-top: 0rpx;
+  position: relative;
+}
+.listcontainer .background{
+  width: 100%;
+  height:100%;
+  margin-top: 0rpx;
+  position:fixed;
+  z-index: -1;
+}
+
+.title {
+  padding-top: 180rpx;
+}
+
+.title .phb text{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 200rpx;
+  text-align: center;
+  color:white;
+  text-anchor:  middle;
+  font-size: 24px;
+}
+.title .sj{
+  padding-top:100rpx;
+}
+.title .sj text{
+  width: 128rpx;
+  height: 128rpx; 
+  color:white;
+  font-size: 16px;
+  vertical-align: middle;
+  margin-left: 200rpx;
+  padding:5rpx;
+}
+
+button{
+  width:350rpx;
+  height: 160rpx;
+  margin:50rpx;
+  background-color: transparent;
+  border: 1px solid black;
+  color:black;
+  font-size:20px;
+  
+  text-align: center;
+  line-height: 160rpx;
+}
+
+.content{
+  margin-top: 200rpx;
+}
+.row1{
+  margin-top: 20rpx;
+  display: flex;
+}
+.row2{
+  display: flex;
+}
+.row3{
+  display: flex;
+}

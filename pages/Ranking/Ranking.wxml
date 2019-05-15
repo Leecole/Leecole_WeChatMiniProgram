@@ -1,0 +1,31 @@
+<!--pages/Ranking/Ranking.wxml-->
+<view class="RankingContainer">
+  <!--滑动区-->
+  <swiper indicator-dots='true' indicator-active-color='white' autoplay='true' interval='5000' easing-function='easeInCubic'>
+    <swiper-item>
+      <image src='../../images/b.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../../images/5.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../../images/4.jpg'></image>
+    </swiper-item>
+  </swiper>
+
+  <!--排行榜区域-->
+  <view class='RankingArea' wx:for='{{ProgramArray}}' wx:key='{{index}}'>
+    <image  class='background' src='../../images/2.jpg'></image>
+
+    <view class='rankingDetail'>
+      <text class='number'>{{item.priority}}</text>
+      <image src='../../images/11.jpg'></image>
+      <view class='content'>
+        <text class='program_name'>{{item.plNAme}} </text>
+        <text class='program_desc'> {{item.introduction}}</text>
+      </view>  
+      <text class='program_startCount'>{{item.shareCount}}</text>
+    </view>
+
+  </view>
+</view>

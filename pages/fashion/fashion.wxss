@@ -1,0 +1,7 @@
+/* pages/fashion/fashion.wxss */
+/*必须设置ec-canvas外面view的高宽，否则会ec-canvas会不显示
+.chart-box{
+  background: white;
+  width: 100%;
+  height: 400rpx;
+}*/

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/index/index",
+    "pages/logs/logs",
+   
+    "pages/fashion/fashion",
+    "pages/Ranking/Ranking",
+    "pages/studysources/studysources",
+    "pages/tieba/tieba",
+    "pages/pushNews/pushNews",
+    "pages/contact-us/contact-us",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFAFA",
+    "navigationBarTitleText": "Welcome To Leecole",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#70D4C0",
+    "backgroundColor": "#FFFAFA",
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "首页",
+        "iconPath": "images/icon/home1.png",
+        "selectedIconPath": "images/icon/home2.png"
+      },
+      {
+        "pagePath": "pages/studysources/studysources",
+        "text": "学习资源",
+        "iconPath": "images/icon/source1.png",
+        "selectedIconPath": "images/icon/source2.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/tieba/tieba",
+        "text": "贴吧社区",
+        "iconPath": "images/icon/bd1.png",
+        "selectedIconPath": "images/icon/bd2.png"
+      },
+      {
+        "pagePath": "pages/contact-us/contact-us",
+        "text": "关于我们" ,
+        "iconPath": "images/icon/us1.png",
+        "selectedIconPath": "images/icon/us2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

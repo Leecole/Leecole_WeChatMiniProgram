@@ -1,0 +1,27 @@
+<!--pages/list/list.wxml-->
+<view class='listcontainer'>
+  <image class='background' src='../../images/1.jpg'> </image>
+  <view class='title'> 
+    <view class='phb'>
+      <text>编程语言排行榜</text>
+    </view>
+    <view class='sj'>
+      <text>数 据 挖 掘   超 乎 想 象</text>
+    </view>
+  </view>
+
+  <view class='content'>
+     <view class="row1">
+      <button class='bdzs' bindtap='onRequest'>榜单展示</button>
+      <button class='bccl' bindtap='PopRequest'>编程潮流</button>
+     </view>
+     <view class="row2">
+      <button>学习资源</button>
+      <button>贴吧社区</button>
+    </view>
+    <view class="row3">
+      <button>新闻推送</button>
+      <button>关于我们</button>
+    </view>
+   </view>
+</view>
