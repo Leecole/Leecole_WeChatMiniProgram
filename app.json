@@ -1,17 +1,22 @@
 {
   "pages": [
-    "pages/list/list",
     "pages/index/index",
     "pages/logs/logs",
-   
+    "pages/list/list",
     "pages/fashion/fashion",
     "pages/Ranking/Ranking",
     "pages/studysources/studysources",
+    "pages/videoDetail/videoDetail",
     "pages/tieba/tieba",
     "pages/pushNews/pushNews",
     "pages/contact-us/contact-us",
     "pages/search/search"
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "是否允许获取你的当前位置信息"
+    }
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FFFAFA",
@@ -36,10 +41,6 @@
         "selectedIconPath": "images/icon/source2.png"
       },
       {
-        "pagePath": "pages/search/search",
-        "text": "搜索"
-      },
-      {
         "pagePath": "pages/tieba/tieba",
         "text": "贴吧社区",
         "iconPath": "images/icon/bd1.png",
@@ -47,9 +48,8 @@
       },
       {
         "pagePath": "pages/contact-us/contact-us",
-        "text": "关于我们" ,
-        "iconPath": "images/icon/us1.png",
-        "selectedIconPath": "images/icon/us2.png"
+        "text": "关于我们",
+        "iconPath": "images/icon/us1.png"
       }
     ]
   },

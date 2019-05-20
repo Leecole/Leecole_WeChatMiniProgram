@@ -16,12 +16,12 @@
       <button class='bccl' bindtap='PopRequest'>编程潮流</button>
      </view>
      <view class="row2">
-      <button>学习资源</button>
-      <button>贴吧社区</button>
+      <button bindtap='studyRequest'>学习资源</button>
+      <button bindtap='tiebaRequest'>贴吧社区</button>
     </view>
     <view class="row3">
-      <button>新闻推送</button>
-      <button>关于我们</button>
+      <button bindtap='newsPush'>新闻推送</button>
+      <button bindtap='aboutUS'>关于我们</button>
     </view>
    </view>
 </view>

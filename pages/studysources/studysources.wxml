@@ -1,2 +1,44 @@
 <!--pages/studysources/studysources.wxml-->
-<text>pages/studysources/studysources.wxml</text>
+<view class='studyContainer'>
+  <image class='banner' src='../../images/banner.jpg'></image>
+  <view class='global'>
+    <form bindsubmit='submit'>
+      <input class='search' name="key" placeholder='springboot 尚硅谷' maxlength='100'></input>
+      <button hover-class='button-hover' form-type='submit' confirm-type='search'>搜索</button>
+    </form>
+  </view> 
+  
+    <image  class='nulldata' src='../../images/icon/no-data.png' style='display:{{isShow?"block":"none"}}'>什么都没找到啊T_T</image>
+    <text class='nulldata1'  style='display:{{isShow?"block":"none"}}'>什么都没找到啊T_T</text>
+    <navigator url='/pages/videoDetail/videoDetail?index={{index}}' class='videoDetails' wx:for='{{VideosArr}}' wx:key='{{index}}'>
+      <view class='video'>
+        <image src='../../{{item.videoImage}}'></image>
+        <image class='play' src='../../images/icon/bf.png'></image>
+        <text class='so_icon'>{{item.so_icon}}</text>
+        <view class='text'>
+          <view class='dianying'>
+            <image  src='../../images/icon/dianying.png'></image>
+            <text class='videoName'>{{item.title}}</text>
+          </view>
+          <view class='author'>
+              <image src='../../images/icon/p.png'></image>
+            <text class='videoAuthor'>{{item.up_name}}</text>
+          </view>
+          <view class='pf'>
+              <image  src='../../images/icon/pingfen.png'></image>
+              <text class='videoScore '>{{item.col3}}</text>
+              <image class='time' src='../../images/icon/time.png'></image>
+              <text class='tag'>{{item.tag}}</text>
+          </view>
+          <view class='js'>
+              <image  src='../../images/icon/jianjie.png'></image>
+              <text class='videoIntroduction'>{{item.des}}</text>
+          </view>
+        </view>
+        <text class='videoPriority'>{{item.score}}</text>
+      </view>
+   </navigator>
+
+</view>
+
+ 

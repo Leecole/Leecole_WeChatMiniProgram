@@ -1,10 +1,16 @@
-// pages/contact-us/contact-us.js
+// pages/videoDetail/videoDetail.js
+let appDatas=getApp();
+let watchLink;
+console.log("console "+appDatas);
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    videoDetail:{},
+    watchLink:{},
+    //url='/pages/videoDetail/videoDetail'
 
   },
 
@@ -12,34 +18,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.getSetting({
-      success(res) {
-        console.log(res.authSetting)
-         res.authSetting = {
-           "scope.userInfo": true,
-           "scope.userLocation": true,
-         }
-      }
-    })
-    
-  },
-
-//获取当前位置
-  locationResponse(){
-    wx.getLocation({
-      type: 'gcj02', // 返回可以用于wx.openLocation的经纬度
-      success(res) {
-        const latitude = res.latitude
-        const longitude = res.longitude
-        wx.openLocation({
-          latitude,
-          longitude,
-          scale: 18
-        })
-      }
+    console.log("Detail里面的options"+options.index);
+    this.setData({
+      videoDetail:appDatas.data.VideosArray[options.index]
     })
   },
 
+  bindButtonTap(e) {
+    const that = this
+    wx.request({
+      watchLink:e.currentTarget.dataset.link,
+      url:'watchLink'
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

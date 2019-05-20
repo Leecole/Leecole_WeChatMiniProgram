@@ -1,11 +1,13 @@
 // pages/Ranking/Ranking.js
+var isShow;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    ProgramArray:[]
+    ProgramArray:[],
+    isShow: false,
   },
 
   /**
@@ -20,12 +22,22 @@ Page({
     wx.request({
       url: 'http://localhost:808/ListRanking',
       success: (data) => {
-        console.log(data);
-        //更新数据
-        this.setData({
-          ProgramArray: data.data.Ranking
-        })
-
+        if (data.data.Ranking['length'] != 0){
+          console.log(data);
+          //更新数据
+          this.setData({
+            ProgramArray: data.data.Ranking,
+            isShow:false,
+          })
+        }
+        else{
+          console.log(data);
+          //更新数据
+          this.setData({
+            ProgramArray: data.data.Ranking,
+            isShow: true,
+          })
+        }
       }
     });
   },

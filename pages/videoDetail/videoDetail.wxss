@@ -1,0 +1,44 @@
+/* pages/videoDetail/videoDetail.wxss */
+.detailContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:30rpx 0; 
+}
+
+.detailContainer image{
+  height: 750rpx;
+}
+
+.videoDetail{
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+
+.videoDetail .up_name, .videoDetail .des, .videoDetail .pf{
+  width:40rpx;
+  height: 40rpx;
+}
+
+.videoDetail view{
+  padding:10rpx;
+}
+
+ .title{
+  padding:20rpx 0;
+  font-size: 32prx;
+}
+
+.up , .desc, .pingfen{
+  display: flex;
+  flex-direction: row;
+}
+
+button{
+  background: #FFAEB9;
+  width:400rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  color:white;
+}

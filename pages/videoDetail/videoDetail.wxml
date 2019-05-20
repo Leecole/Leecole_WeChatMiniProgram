@@ -1,0 +1,28 @@
+<!--pages/videoDetail/videoDetail.wxml-->
+<view  class='detailContainer'>
+    <image class='videoImage' src='../../{{videoDetail.videoImage}}'></image>
+     <text class='title'>{{videoDetail.title}}</text>
+    <view class='videoDetail'>
+      <view class='up'>
+        <image class='up_name' src='../../images/icon/p.png'></image>
+        <text>用户：{{videoDetail.up_name}}</text>
+      </view>
+      <view class='pingfen'>
+        <image class='pf' src='../../images/icon/pingfen.png'></image>
+        <text>评分：{{videoDetail.score}}</text>
+      </view>
+      <view class='desc'>
+        <image class='des' src='../../images/icon/jianjie.png'></image>
+        <text>描述：{{videoDetail.des}}</text>
+      </view>
+        <button bindtap="bindButtonTap" data-link="videoDetail.title-link" >立刻观影</button>
+
+    </view>
+
+
+
+
+
+
+</view>
+

@@ -1,30 +1,38 @@
 <!--pages/Ranking/Ranking.wxml-->
 <view class="RankingContainer">
+  <image  class='background' src='../../images/2.jpg'></image>
   <!--滑动区-->
   <swiper indicator-dots='true' indicator-active-color='white' autoplay='true' interval='5000' easing-function='easeInCubic'>
     <swiper-item>
-      <image src='../../images/b.jpg'></image>
+      <image src='../../images/4.jpg'></image>
     </swiper-item>
     <swiper-item>
       <image src='../../images/5.jpg'></image>
     </swiper-item>
     <swiper-item>
-      <image src='../../images/4.jpg'></image>
+      <image src='../../images/b.jpg'></image>
     </swiper-item>
   </swiper>
 
+  <view class='nivgator_button'>
+    <text>排名</text>
+    <text>编程语言/项目</text>
+    <text class='stars'>星标数</text>
+  </view>
+
+    <image  class='nulldata' src='../../images/icon/no-data.png' style='display:{{isShow?"block":"none"}}'>什么都没找到啊T_T</image>
+    <text class='nulldata1'  style='display:{{isShow?"block":"none"}}'>什么都没找到啊T_T</text>
+
   <!--排行榜区域-->
   <view class='RankingArea' wx:for='{{ProgramArray}}' wx:key='{{index}}'>
-    <image  class='background' src='../../images/2.jpg'></image>
-
     <view class='rankingDetail'>
-      <text class='number'>{{item.priority}}</text>
-      <image src='../../images/11.jpg'></image>
+      <text class='number'>{{index+1}}</text>
+      <image src='../../{{item.icon}}'></image>
       <view class='content'>
-        <text class='program_name'>{{item.plNAme}} </text>
-        <text class='program_desc'> {{item.introduction}}</text>
-      </view>  
-      <text class='program_startCount'>{{item.shareCount}}</text>
+        <text class='program_name'>{{item.language}} </text>
+        <text class='program_desc'> {{item.projectName}}</text>
+      </view>   
+      <text class='program_startCount'>{{item.stars}}</text>
     </view>
 
   </view>

@@ -1,7 +1,7 @@
 /* pages/Ranking/Ranking.wxss */
 swiper{
   width: 100%;
-  height:400rpx;
+  height:300rpx;
 }
 
 swiper image{
@@ -17,6 +17,27 @@ swiper image{
   z-index:-1;
 }
 
+.nivgator_button{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid white;
+  font-size: 30rpx;
+  color:white;
+  font-family: 'Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif';
+  position: relative;
+}
+
+.nivgator_button text{
+  padding: 30rpx;
+}
+
+.stars{
+  position: relative;
+  left:255rpx;
+  top:0rpx;
+  font-size: 36rpx;
+  font-family: '宋体';
+}
 
 .rankingDetail{
   display: flex;
@@ -59,7 +80,28 @@ swiper image{
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .program_startCount{
-  color: red;
+  color: #F5FFFA;
   line-height: 90rpx;
+}
+
+.nulldata{
+  display: none;
+  width:300rpx;
+  height: 300rpx;
+  font-size:38rpx;
+  z-index:3;
+  position:relative;
+  left:30%;
+  top:200rpx;
+}
+.nulldata1{
+  display: none;
+  color:pink;
+  font-size:38rpx;
+  z-index:3;
+  position:relative;
+  left:30%;
+  top:300rpx;
 }

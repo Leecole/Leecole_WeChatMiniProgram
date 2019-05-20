@@ -1,1 +1,194 @@
 /* pages/studysources/studysources.wxss */
+.studyContainer{
+  position: relative;
+}
+.studyContainer .banner{
+  width: 100%;
+  height:250rpx;
+  z-index: -1;
+}
+
+.global{
+   font-size: 26rpx;
+   font-family: 'Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif';
+}
+
+.search{
+  width: 400rpx;
+  height: 60rpx;
+  position: absolute;
+  left:10%;
+  top:162rpx;
+  text-indent: 20rpx;
+  vertical-align:middle;
+  border: 1rpx solid #F0F0F0;
+  background-color: #F8F8FF;
+  background: rgba(255,255,255,0.6);
+  color:black;
+  border-radius: 10rpx;
+}
+
+form button{
+  width: 150rpx;
+  height: 64rpx;
+  position: absolute;
+  left:65%;
+  top:162rpx;
+  line-height: 64rpx;
+  color: #f25d8e;
+  border-left: none;
+  background-color: #F8F8FF;
+  background: rgba(255,255,255,0.9); 
+}
+
+.button-hover{
+  color: green;
+  background-color: rgba(255,255,255,0.9);
+  opacity: 0.7;
+}
+
+.videoDetails{
+  width: 100%;
+  height:240rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+.video{
+  display: flex;
+  padding: 20rpx;
+  position: relative;
+}
+.video image{
+  width:40%;
+  height: 200rpx;
+  border-radius: 8rpx;
+  z-index: -1;
+}
+
+.so_icon{
+  color:white;
+  z-index:1;
+  position: absolute;
+  left:28%;
+  top:170rpx;
+  font-size: 28rpx;
+}
+
+.video .play{
+  width:40rpx;
+  height: 40rpx;
+  z-index: 1;
+  position: absolute;
+  left:22%;
+  top:170rpx;
+}
+
+.video .text{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  font-family: 'Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif';
+  position: relative;
+}
+.text image{
+  width: 35rpx;
+  height:35rpx;
+}
+.dianying , .author, .pf, .js{
+  display: flex;
+  flex-direction: row;
+}
+
+.dianying, .videoName{
+  font-size: 32rpx;
+  color:#000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dianying image{
+  position: relative;
+  left:0rpx;
+  top:8rpx;
+}
+
+.videoAuthor, .author{
+  font-size: 24rpx;
+  color:#FF82AB;
+  white-space: nowrap;
+  padding-top: 10rpx;
+}
+.author image{
+  position: relative;
+  left:0rpx;
+  top:15rpx;
+}
+
+.videoScore, .pf, .tag{
+  font-size: 24rpx;
+  color:#333;
+  white-space: nowrap;
+  padding: 10rpx;
+  padding-bottom: 10rpx;
+  position: relative;
+}
+
+.pf .time{
+  width:30rpx;
+  height:30rpx;
+  position: absolute;
+  top:20rpx;
+  left:280rpx;
+}
+
+.tag{
+  position: absolute;
+  top:10rpx;
+  left:300rpx;
+}
+
+.pf image{
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  left:-5rpx;
+  top:10rpx;
+}
+.videoIntroduction {
+  padding-left: 10rpx;
+  font-size: 26rpx;
+  color:#333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.js image {
+  width: 40rpx;
+  height: 30rpx;
+}
+
+.videoPriority{
+  color: red;
+}
+
+.nulldata{
+  display: none;
+  width:300rpx;
+  height: 300rpx;
+  font-size:38rpx;
+  z-index:3;
+  position:relative;
+  left:30%;
+  top:200rpx;
+}
+.nulldata1{
+  display: none;
+  color:pink;
+  font-size:38rpx;
+  z-index:3;
+  position:relative;
+  left:30%;
+  top:300rpx;
+}

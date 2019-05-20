@@ -1,2 +1,14 @@
 <!--pages/contact-us/contact-us.wxml-->
-<text>pages/contact-us/contact-us.wxml</text>
+<view class='contactUS_container'>
+  <image class='background' src='../../images/personal.jpg' ></image>
+  <view class='panel1'>
+    <text class='title'>关于我们 *leecole* </text>
+    <text class='introduction'>湖北河北北京上海叫哦恩人发生过粉红色的尽快发货表示肯定就不放卡时间的说法是肯德基吧按时速发嗲黑寡妇</text>
+  </view>
+  <view class='panel2'>
+   <text class='contact'>联系管理员</text>
+    <text class='WeChat'>WeChat：LW18827556015</text>
+    <button catchtap='locationResponse'>路痴必备定位</button>
+  </view>
+</view>
+

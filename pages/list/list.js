@@ -31,6 +31,34 @@ Page({
     });
   },
 
+  //学习资源
+  studyRequest() {
+    wx.switchTab({
+      url: '/pages/studysources/studysources',
+    });
+  },
+  
+  //贴吧社区
+  tiebaRequest() {
+    wx.switchTab({
+      url: '/pages/tieba/tieba',
+    });
+  }, 
+  
+  //新闻推送
+  newsPush() {
+    wx.navigateTo({
+      url: '/pages/pushNews/pushNews',
+    });
+  },
+
+//关于我们
+  aboutUS(){
+    wx.switchTab({
+      url: '/pages/contact-us/contact-us',
+    });
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
